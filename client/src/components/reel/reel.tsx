@@ -22,7 +22,7 @@ export const Reel = ({
     let prevFrame = Date.now();
 
     function playAnimation() {
-      let step = target < 0 ? 8 : 6 * ((target - executed) / target) + 2;
+      let step = target < 0 ? 8 : 6 * ((target - executed) / target) + 12;
       const interval = Date.now() - prevFrame;
       step = step * (interval / 10);
 
