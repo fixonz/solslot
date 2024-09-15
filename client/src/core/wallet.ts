@@ -59,7 +59,7 @@ export const getBalance = async () => {
 
 
   let vaultBalance = await provider.connection
-    .getBalance(new PublicKey("DNifDbg6Mj2NrFWP31cUDTHt5mdqBAz7EHMwmY8ZAs9j"))
+    .getBalance(new PublicKey("DSbUYQXs9aR5C8Ecrkf1aUUwh2gx36ihER5XnwT28ynC"))
     .then(function (data) {
       return lamportsToSol(data).toFixed(2);
     })
